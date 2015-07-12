@@ -7,12 +7,78 @@ html, body, p {
 }
 
 body {
-  background-color: #eee;
+  background-color: #b0c4de;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  background-color: #1e90ff;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+  height: 80px;
+  text-align: center;
+}
+
+.header img {
+  margin: 15px 0 0;
+  width: 60px;
+}
+
+.header h1 {
+  text-indent: -9999px;
+}
+
+.container {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.messages, .create {
+  margin: 40px 0;
+}
+
+.messages a,
+.create .actions input {
+  background-color: #1e90ff;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 10px;
+  padding: 12px 24px;
+  text-decoration: none;
+  transition: background-color 0.5s;
+  display: inline-block;
+  border-radius: 5px;
 }
 
 .message {
   background-color: #fff;
+  font-weight: 300;
+  padding: 20px;
+  margin-top: 10px;
 }
+
+p.time {
+  color: #dcdcdc;
+  font-size: 12px;
+  margin-top: 12px;
+}
+
+// button {
+//   background-color: #1e90ff;
+//   border: none;
+//   color: #fff;
+//   cursor: pointer;
+//   font-size: 14px;
+//   margin-top: 10px;
+//   padding: 12px 24px;
+//   transition: background-color 0.5s;
+// }
+//
+// button:hover {
+//   background-color: #c24609;
+//   transition: background-color 0.5s;
+// }
 
 form label {
   display: block;
@@ -20,6 +86,31 @@ form label {
 }
 
 form textarea {
-  border: 1px solod transparent;
+  border: 1px solid transparent;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  margin: 20px 0 10px;
+  min-height: 100px;
+  padding: 16px;
+  transition: border 0.5s;
   width: calc(100% - 32px);
+}
+
+form textarea:focus {
+  border: 1px solid #0084d7;
+  box-shadow: 0;
+  outline: 0;
+  transition: border 0.5s;
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .messages, .create {
+      padding: 0 20px;
+    }
 }

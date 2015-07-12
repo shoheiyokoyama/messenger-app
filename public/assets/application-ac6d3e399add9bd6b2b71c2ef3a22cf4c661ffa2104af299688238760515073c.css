@@ -1,0 +1,55 @@
+/* line 5, /Users/yokoyamashohei/Documents/Application/Ruby on Rails/MessengerApp/app/assets/stylesheets/messages.scss */
+html, body, p {
+  margin: 0;
+}
+
+/* line 9, /Users/yokoyamashohei/Documents/Application/Ruby on Rails/MessengerApp/app/assets/stylesheets/messages.scss */
+body {
+  background-color: #b0c4de;
+  font-family: Arial, sans-serif;
+}
+
+/* line 14, /Users/yokoyamashohei/Documents/Application/Ruby on Rails/MessengerApp/app/assets/stylesheets/messages.scss */
+.header {
+  background-color: #1e90ff;
+  height: 80px;
+}
+
+/* line 19, /Users/yokoyamashohei/Documents/Application/Ruby on Rails/MessengerApp/app/assets/stylesheets/messages.scss */
+.header img {
+  margin: 15px 0 0;
+  width: 60px;
+}
+
+/* line 24, /Users/yokoyamashohei/Documents/Application/Ruby on Rails/MessengerApp/app/assets/stylesheets/messages.scss */
+.message {
+  background-color: #fff;
+}
+
+/* line 28, /Users/yokoyamashohei/Documents/Application/Ruby on Rails/MessengerApp/app/assets/stylesheets/messages.scss */
+form label {
+  display: block;
+  width: 100%;
+}
+
+/* line 33, /Users/yokoyamashohei/Documents/Application/Ruby on Rails/MessengerApp/app/assets/stylesheets/messages.scss */
+form textarea {
+  border: 1px solid transparent;
+  width: calc(100% - 32px);
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
