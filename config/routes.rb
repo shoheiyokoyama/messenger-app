@@ -1,8 +1,11 @@
 Rails.application.routes.draw do
+  resources :messages
+  root 'messages#index'
 
-  get '/messages' => 'messages#index'
-  get '/messages/new' => 'messages#new'
-  post 'messages' => 'messages#create'
+  # get '/messages' => 'messages#index'
+  # get '/messages/new' => 'messages#new'
+  # get '/messages/edit' => 'messages#edit'
+  # post 'messages' => 'messages#create'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
