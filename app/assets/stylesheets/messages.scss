@@ -51,6 +51,10 @@ body {
   border-radius: 5px;
 }
 
+.messages a:hover, .create .actions input:hover, .update .actions input:hover {
+  opacity: 0.7;
+}
+
 .message {
   background-color: #fff;
   font-weight: 300;
@@ -62,6 +66,7 @@ p.time {
   color: #dcdcdc;
   font-size: 12px;
   margin-top: 12px;
+  text-align: right;
 }
 
 // button {
@@ -79,6 +84,17 @@ p.time {
 //   background-color: #c24609;
 //   transition: background-color 0.5s;
 // }
+.messageSub {
+  text-align: right;
+}
+
+.messageSub a {
+  font-size: 12px;
+  color: #20b2aa;
+  padding: 3px 6px;
+  background: #fff;
+  border-radius: 2px;
+}
 
 form label {
   display: block;
