@@ -32,12 +32,12 @@ body {
   margin: 0 auto;
 }
 
-.messages, .create {
+.messages, .create, .update {
   margin: 40px 0;
 }
 
 .messages a,
-.create .actions input {
+.create .actions input, .update .actions input {
   background-color: #1e90ff;
   border: none;
   color: #fff;
