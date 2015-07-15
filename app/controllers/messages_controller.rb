@@ -1,4 +1,6 @@
 class MessagesController < ApplicationController
+  before_action :find_message, only: [:edit, :update, :destroy]
+
   def index
     @messages = Message.all
   end
@@ -17,11 +19,9 @@ class MessagesController < ApplicationController
   end
 
   def edit
-    @message = Message.find(params[:id])
   end
 
   def update
-    @message = Message.find(params[:id])
     if @message.update(message_params)
       redirect_to messages_path
     else
@@ -30,7 +30,6 @@ class MessagesController < ApplicationController
   end
 
   def destroy
-    @message = Message.find(params[:id])
     @message.destroy
     redirect_to messages_path
   end
@@ -38,6 +37,10 @@ class MessagesController < ApplicationController
   private
   def message_params
     params.require(:message).permit(:content)
+  end
+
+  def find_message
+    @message = Message.find(params[:id])
   end
 
 end
